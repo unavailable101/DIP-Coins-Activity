@@ -15,10 +15,9 @@ namespace DIP_Coins_Activity
         public const float CENT_10 = .10f;
         public const float CENT_5 = .05f;
 
-        //public static void CountCoin(Bitmap bmp, ref Label countLabel, ref Label valueLabel)
         public static void CountCoin(Bitmap bmp, ref Label valueLabel)
         {
-            int count = 0; //Expected 64
+            int count = 0; 
             float value = 0; //Expected 46.45
 
             int height = bmp.Height;
@@ -37,7 +36,6 @@ namespace DIP_Coins_Activity
                     }
                 }
 
-            //countLabel.Text = count.ToString();
             valueLabel.Text = value.ToString("F2");
         }
 
